@@ -1,0 +1,28 @@
+<div class="container">
+    <h3 class="">Agregar cita</h3>
+    
+    <form >
+
+        <label>Nombre</label>
+        <div class="labels">
+   <input [(ngModel)]="nombre" name="input1" placeholder="ingrese su nombre">
+ 
+</div>
+<label>Fecha</label>
+<div class="labels">
+
+<input [(ngModel)]="fecha"  name="input2" type="date">
+</div>
+<label>hora</label>
+<div class="labels">
+
+<input [(ngModel)]="hora"  name="input3" type="time">
+</div>
+<label>Sintomas</label>
+<div class="labels">
+
+<textarea [(ngModel)]="sintomas"  name="input4" placeholder="Ingrese los sintomas"></textarea>
+</div>
+<button (click)="mostrar()" type="submit" class="btn btn-primary">Agregar cita</button>
+    </form>
+</div>
