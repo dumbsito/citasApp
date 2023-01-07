@@ -13,7 +13,7 @@ export class AppComponent {
     console.log(cita);
     if(this.listCitas.length>1){
       Swal.fire({
-        title: 'El maximo de citas es de 2',
+        title: 'The max of appointments is 2',
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
         },

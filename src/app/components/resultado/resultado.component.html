@@ -1,16 +1,16 @@
 <div class="card bg-light" *ngIf="lista.length===0" >
     <div class="card-body">
-        <h5 class="card-title text-center">No hay citas para mostrar</h5>
+        <h5 class="card-title text-center">No appointments to show</h5>
     </div>
 </div>
 
 <div *ngFor="let item of lista;let i=index" class="resultado">
 
     <div>
-    <p>Nombre:<span>{{item.nombre}} </span></p>
-    <p>Fecha: <span> {{item.fecha}}</span></p>
-    <p>Hora: <span> {{item.hora}}</span></p>
-    <p>Sintomas:  <span> {{item.sintomas}}</span></p>
+    <p>Name:<span>{{item.nombre}} </span></p>
+    <p>Date: <span> {{item.fecha}}</span></p>
+    <p>Hour: <span> {{item.hora}}</span></p>
+    <p>Symptoms:  <span> {{item.sintomas}}</span></p>
 </div>
-    <button (click)="eliminar(i)" class="btn btn-danger">Eliminar</button>
+    <button (click)="eliminar(i)" class="btn btn-danger">Delete</button>
 </div>

@@ -1,28 +1,28 @@
 <div class="container">
-    <h3 class="">Agregar cita</h3>
+    <h3 class="">Add Appointment</h3>
     
     <form >
 
-        <label>Nombre</label>
+        <label>Name</label>
         <div class="labels">
-   <input [(ngModel)]="nombre" name="input1" placeholder="ingrese su nombre">
+   <input [(ngModel)]="nombre" name="input1" placeholder="Enter your name">
  
 </div>
-<label>Fecha</label>
+<label>Date</label>
 <div class="labels">
 
 <input [(ngModel)]="fecha"  name="input2" type="date">
 </div>
-<label>hora</label>
+<label>Hour</label>
 <div class="labels">
 
 <input [(ngModel)]="hora"  name="input3" type="time">
 </div>
-<label>Sintomas</label>
+<label>Symptom</label>
 <div class="labels">
 
-<textarea [(ngModel)]="sintomas"  name="input4" placeholder="Ingrese los sintomas"></textarea>
+<textarea [(ngModel)]="sintomas"  name="input4" placeholder="Enter symptoms"></textarea>
 </div>
-<button (click)="mostrar()" type="submit" class="btn btn-primary">Agregar cita</button>
+<button (click)="mostrar()" type="submit" class="btn btn-primary">Add appointment</button>
     </form>
 </div>
